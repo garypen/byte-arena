@@ -1,0 +1,28 @@
+[package]
+name = "byte-arena"
+version = "0.1.0"
+description = "limited arena of Bytes"
+authors = [
+  "garypen <garypen@gmail.com>",
+]
+license = "Apache-2.0"
+repository = "https://github.com/garypen/byte-arena"
+homepage = "https://github.com/garypen/byte-arena"
+documentation = "https://github.com/garypen/byte-arena#readme"
+readme = "README.md"
+keywords = ["arena"]
+categories = ["Memory management"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytes = { version = "1.5.0" }
+thiserror = "1.0.50"
+typed-arena = { version = "2.0.2" }
+typed-builder = "0.18.0"
+
+[lib]
+name = "byte_arena"
+path = "src/lib.rs"
+
